@@ -58,8 +58,20 @@
     - Cái nhìn tổng quan về data sau khi clean:![cleaned data](./images/chotot_data4.png)
     &#8594; được lưu [dataset.csv](./data/chotot/dataset.csv) 
     <br>
-  - **Trực quan hoá dữ liệu:**
-  - 
+  - **Trực quan hoá dữ liệu:**<br>
+    - Trực quan dữ liệu giá trị **dạng số**:![cleaned data](./images/chotot_data5.png)
+    &#8594; phòng ngủ và phòng tắm không ảnh hưởng nhiều đến giá<br><br>
+    - Tương quan giữa **quận** và **giá**:![cleaned data](./images/chotot_data6.png)
+    &#8594; **Quận 5 , Quận 10, Quận 1 , Quận Phú Nhuận** là những quận có giá chung cư **cao nhất**<br><br>
+    - Tương quan giữa **tình trạng bđs** và **giá**:![cleaned data](./images/chotot_data7.png)
+    &#8594; Có thể thấy những **chung cư đã được bàn giao** có **giá cao hơn** so với **chưa được bàn giao**<br><br>
+    - Tương quan giữa **tình trạng nội thất** và **giá**:![cleaned data](./images/chotot_data12.png)
+    &#8594; Nội thất được bàn giao thô được ưa chuộng trong những khu căn hộ với giá cao<br><br>
+    - Tương quan giữa **loại chung cư** và **giá**:![cleaned data](./images/chotot_data13.png)
+    &#8594; Những căn chung cư có **giá trung bình đến cao** thường là **penthouse**<br><br>
+    - Một số tương quan khác:![cleaned data](./images/chotot_data8.png)![cleaned data](./images/chotot_data9.png)![cleaned data](./images/chotot_data10.png)![cleaned data](./images/chotot_data11.png)
+    &#8594; Có thể thấy trường dữ liệu **giấy tờ** **không** ảnh hưởng quá nhiều tới **giá nhà**<br><br>
+    
 
 
 
