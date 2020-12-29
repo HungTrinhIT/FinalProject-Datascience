@@ -12,8 +12,12 @@
     | Nguyễn Văn Khoa  | <ul><li>Thu thập dữ liệu từ trang [Chợ tốt](https://nha.chotot.com/)</li><li>Visualize các cột dữ liêụ để xây dựng dataset cho  bước training</li><li>Training với mô hình **Linear Regression** và đưa ra nhận xét</li></ul> |
 
 <h2>2. Tổng quan đồ án</h2>
+2.1. **Phát biểu bài toán**
 
-2.1. **Quá trình thực hiện đồ án** : 
+- Bài toán 1: Dự đoán giá chung cư khu vực thành phố Hồ Chí Minh với tập dữ liêụ 24949 entries từ trang [Chợ tốt](https://nha.chotot.com/)
+- Bài toán 2: Đánh giá rating 
+  
+2.2. **Quá trình thực hiện đồ án** : 
 
   - **Giai đoạn 1**: Ở giai này, nhóm hướng đến bài toán **dự đoán giá chung cư và nhà ở** của khu vực **thành phố Hồ Chí Minh**. Sau đó, sử dụng phương pháp **parse HTML** để thu thập dữ liệu từ trang [Chợ tốt](https://nha.chotot.com/).
     - Thông tin về dữ liệu thu thập được: ![Dữ liệu về chung cư](./images/chotot_data1.png)<br>
@@ -21,10 +25,7 @@
 
   - **Giai đoạn 2**: Sau khi thực hiện xong đồ án, nhóm thấy sai số của output là khá cao hơn 1 tỷ VNĐ. Lý do, bộ dữ liêụ thu thập được là không tốt ảnh hưởng lớn đến quá trình traning do đó nhóm đã làm thêm 1 bài toán khác đó là
 
-2.2. **Phát biểu bài toán**
 
-- Bài toán 1: Dự đoán giá chung cư khu vực thành phố Hồ Chí Minh với tập dữ liêụ 24949 entries từ trang [Chợ tốt](https://nha.chotot.com/)
-- Bài toán 2: Đánh giá rating 
 
 
 <h2>3. Phân tích chi tiết</h2>
