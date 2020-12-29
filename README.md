@@ -18,7 +18,7 @@
 - **Bài toán 1:** Dự đoán giá chung cư khu vực thành phố Hồ Chí Minh với tập dữ liêụ 24949 entries từ trang [Chợ tốt](https://nha.chotot.com/)
 - **Bài toán 2:** Đánh giá rating 
   
-2.2. **Quá trình thực hiện đồ án** : trải qua 2 giai đoạn vơí hai bài toán khác nhau
+2.2. **Quá trình thực hiện đồ án** : trải qua 2 giai đoạn với hai bài toán khác nhau.
 
   - **Giai đoạn 1**: Ở giai đoạn này, nhóm hướng đến bài toán **dự đoán giá chung cư và nhà ở** của khu vực **thành phố Hồ Chí Minh**. Sau đó, sử dụng phương pháp **parse HTML** để thu thập dữ liệu từ trang [Chợ tốt](https://nha.chotot.com/).
     - Thông tin về dữ liệu thu thập được: ![Dữ liệu về chung cư](./images/chotot_data1.png)<br>
@@ -33,8 +33,9 @@
 
 **3.1. Bài toán 1:**
   
-  - Dữ liệu sau khi thu thập được bao gồm 24949 dòng: ![Dữ liệu chung cư](./images/chotot_data2.png)
-  - Mô tả các biến:
+  - Dữ liệu sau khi thu thập được bao gồm 24949 dòng: ![Dữ liệu chung cư](./images/chotot_data2.png) &#8594; được lưu [rawdata.csv](./data/chotot/rawdata.csv) 
+
+  - **Mô tả các biến**:
     - **DiaChi:** địa chỉ của chung cư, ở thành phố Hồ Chí Minh
     - **TinhTrangBDS:** là chung cư này đã bàn giao chưa, hay vẫn còn đang trong quá trìnhg xây dựng. 
     - **DienTich:** diện tích thực ở(sử dụng) trên sổ hồng, đơn vị: **triệu/m2**.
@@ -50,8 +51,15 @@
     - **HuongBanCong:** hướng ban công của căn hộ.
     - **DacDiem:** Đặc điểm căn hộ ( căn trong góc, hay căn chính giữa,...).
     - **Gia:** giá bán của căn hộ.
-
-
+    <br>
+  - **Tiền xử lý dữ liệu:**
+    - Chỉ lấy các dòng dữ liệu có dữ liệu về: diện tích, phòng ngủ, phòng tắm và giá. Và đổi giá tiền từ VNĐ ![cleaned data](./images/chotot_data3.png) USD (theo tỉ giá 1$2 ~ 24000)
+    - Dữ liệu sau khi xử lý còn ![cleaned data](./images/chotot_data3.png)
+    - Cái nhìn tổng quan về data sau khi clean:![cleaned data](./images/chotot_data4.png)
+    &#8594; được lưu [dataset.csv](./data/chotot/dataset.csv) 
+    <br>
+  - **Trực quan hoá dữ liệu:**
+  - 
 
 
 
