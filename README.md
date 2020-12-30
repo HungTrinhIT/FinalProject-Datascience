@@ -1,5 +1,6 @@
 <h1>BÁO CÁO ĐỒ ÁN CUỐI KÌ - KHOA HỌC DỮ LIỆU ỨNG DỤNG</h1>
-
+<h2>Cấu trúc folder đồ án</h2>
+  - **Chotot:** chứa file
 <h2>1. Thành viên nhóm và phân công</h2>
 
 * Thành viên 
@@ -148,3 +149,9 @@
   ![data](./images/rating_data3.png)
 
 <h2>4. Hướng dẫn chạy các file code</h2>
+
+  - **Book_1.csv** : File lưu đường link của các cuốn sách trên trang goodread đã thu thập được 
+  -	**X.csv** : File lưu giữ thông tin cụ thể của từng cuốn sách( không  có rating) 
+  -	**Y.csv** : File lưu giữ thông tin về rating của từng cuốn sách 
+  -	**Colab.txt** : Lưu đường link dẫn đến file crawl data 
+  -	**Predict.csv** : Lưu kết quả dự đoán mô hình và kết quả thực trên trang goodread
