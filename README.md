@@ -110,3 +110,36 @@
   - Xử lý data ở cột **series**: dữ liệu crawl được có dạng **(abc #x) &#8594; abc**
   - Xử lý data ở cột **date_published**: do có dòng có ngày đầy đủ, có ngày chỉ có năm &#8594; chuyển tất cả về năm.
   - Một số xử lý khác: được trình bày chi tiết trong file **[Predict.ipynb](/Rating/Predict.ipynb)**
+
+- **Chạy thuật toán đoán giá**:
+  - Bước 1: chia dữ liệu thành 2 tập
+    - Tập train: x_train, y_train
+    - Tập valid: x_valid, y_valid
+  - Bước 2: Training data:
+  ```python
+  def save_model(model,model_name):
+    with open(model_name + '.pkl', 'wb') as f:
+      pickle.dump(model, f, pickleHIGHEST_PROTOCOL)
+
+  def load_model(model_name):
+    with open(model_name + '.pkl', 'rb') as f:
+      return pickle.load(f)
+  ```
+
+   ```python
+    from sklearn.svm import SVR
+    from sklearn.pipeline import make_pipeline
+    from sklearn.neural_network import MLPRegressor
+    from sklearn.preprocessing import StandardScaler
+  ```
+
+  ```python
+    # Linear Regression
+    reg_LR = make_pipeline(StandardScaler(), LinearRegression())
+    # Support Vector Regression
+    reg_SVR = make_pipeline(StandardScaler(), SVR(C=0.5, gamma=0.1))
+    # MLP Regression
+    reg_MLPR = make_pipeline(StandardScaler(), MLPRegressor(random_state=1, max_iter=500))
+  ```
+
+- **Đánh giá thuật toán:**:
