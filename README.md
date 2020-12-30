@@ -98,6 +98,15 @@
   -	**awards** : Các giải thưởng mà cuốn sách nhận được
   -	**rating** : đánh giá trung bình của người đọc
 
+- **Cách thu thập dữ liệu:**
+  - Bước 1: Vào link ["list book on good reads"](https://www.goodreads.com/list/show/1.Best_Books_Ever) lấy ra link của tất cả các cuốn sách có trong goodread.
+  - Bước 2: Từ đó sẽ vào từng link đã thu thập được ở trên để lấy thông tin chi tiết của từng cuốn sách. Cách làm là : chia dữ liệu ra làm nhiều phần để crawl trên colab nhằm giảm bớt thời gian lấy dữ liệu. Với mỗi trang colab ta lấy được 1 file csv.
+  - Bước 3: Gộp hết vào thành 1 file [csv](/Rating/dataset.csv) duy nhất  và sử dụng python và anaconda để làm các bước tiếp theo. 
+
+&#8594; **Tóm lại:** Hầu như tất cả các trường dữ liệu thu thập được đều có ít nhiều ảnh hưởng đến rating của cuốn sách . Một số khác như link , isbn , isbn13 ,… thì ko ảnh hưởng đến nên sẽ bị xóa đi trong quá trình xây dựng model. Chi tiết đều được viết đầy đủ trong file:  [Predict.ipynb](/Rating/Predict.ipynb)
+  
+
+
 
 
 
