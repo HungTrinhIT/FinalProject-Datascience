@@ -15,8 +15,8 @@
 
 2.1. **Phát biểu bài toán**
 
-- **Bài toán 1:** Dự đoán giá chung cư khu vực thành phố Hồ Chí Minh với tập dữ liêụ 24949 entries từ trang [Chợ tốt](https://nha.chotot.com/)
-- **Bài toán 2:** Đánh giá rating 
+- **Bài toán 1:** Dự đoán giá chung cư khu vực thành phố Hồ Chí Minh với tập dữ liêụ **24.949 entries** từ trang [Chợ tốt](https://nha.chotot.com/)
+- **Bài toán 2:** Dự đoán **rating của 1 cuốn sách** theo đánh giá của trang  [Good reads](https://www.goodreads.com/) với tập dữ liệu gồm **22.500 entries**
   
 2.2. **Quá trình thực hiện đồ án** : trải qua 2 giai đoạn với hai bài toán khác nhau.
 
@@ -24,9 +24,7 @@
     - Thông tin về dữ liệu thu thập được: ![Dữ liệu về chung cư](./images/chotot_data1.png)<br>
     - Vấn đề: Ở đây dữ liệu thiếu khá nhiều, và sẽ có một số cột không ảnh hưởng đến output giá chung cư nên sẽ phải tiền xử lý, trực quan hoá các cột dữ liệu để tìm ra dữ liệu nào được giữ lại để xây dựng cho quá trình traning ***(tiền xử lý và EDA dữ liệu sẽ được trình bày bên dưới)***
 
-  - **Giai đoạn 2**: Sau khi thực hiện xong đồ án, nhóm thấy sai số của output là khá cao hơn 1 tỷ VNĐ. Lý do, bộ dữ liêụ thu thập được là không tốt ảnh hưởng lớn đến quá trình traning do đó nhóm đã làm thêm 1 bài toán khác đó là
-
-
+  - **Giai đoạn 2**: Sau khi thực hiện xong đồ án, nhóm thấy sai số của output là khá cao hơn 1 tỷ VNĐ. Lý do, bộ dữ liêụ thu thập được là không tốt ảnh hưởng lớn đến quá trình traning do đó nhóm đã làm thêm 1 bài toán khác đó là: **Dự đoán rating của một cuốn sách thông qua đánh giá của trang [Good reads](https://www.goodreads.com/), và sử dụng mô hình học máy để đưa ra kết quả cần thiết
 
 
 <h2>3. Phân tích chi tiết</h2>
@@ -70,10 +68,35 @@
     - Tương quan giữa **loại chung cư** và **giá**:![cleaned data](./images/chotot_data13.png)
     &#8594; Những căn chung cư có **giá trung bình đến cao** thường là **penthouse**<br><br>
     - Một số tương quan khác:![cleaned data](./images/chotot_data8.png)![cleaned data](./images/chotot_data9.png)![cleaned data](./images/chotot_data10.png)![cleaned data](./images/chotot_data11.png)
+  
     &#8594; Có thể thấy trường dữ liệu **giấy tờ** **không** ảnh hưởng quá nhiều tới **giá nhà**<br><br>
+
+  - **Chạy thuật toán đoán giá**:
+
+**3.1. Bài toán 2:**
     
-
-
+- Dữ liệu thu thập được gồm **22.500 dòng** với **20 trường dữ liệu**.
+- **Mô tả các biến:**
+  - **id** : ID của cuốn sách 
+  - **title** : Tên của cuốn sách
+  -	**link** : đường link dẫn đến cuốn sách đó
+  -	**series**: Cuốn sách này có nằm trong series nào ko ?
+  -	**author** : tác giả cuốn sách
+  -	**author_link**: đường link dẫn đến thông tin về tác giả
+  -	**rating_count**: Số lượng người rating
+  -	**review_count**: Số lượng người để lại review
+  -	**number_of_Pages** : Số trang của cuốn sách
+  -	**date_published**: Ngày được xuất bản 
+  -	**publisher** : Nhà xuất bản
+  -	**original_title** : Tên gốc 
+  -	**genre_and_votes**: Thể loại và lượt bình chọn 
+  -	**isbn** : Mã số tiêu chuẩn quốc tế cho sách
+  -	**isbn13**: Mã vạch
+  -	**settings** : Bối cảnh diễn ra chính trong cuốn sách
+  -	**characters**: Các nhân vật trong cuốn sách 
+  -	**description**: Tóm tắt cuốn sách
+  -	**awards** : Các giải thưởng mà cuốn sách nhận được
+  -	**rating** : đánh giá trung bình của người đọc
 
 
 

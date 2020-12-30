@@ -1,0 +1,2 @@
+-Link crawl data google colab:
+https://colab.research.google.com/drive/1HXNoeaxnVkUylmmbQ7vKxkaKJLxXH9p7?usp=sharing&fbclid=IwAR0P5ov0YpisbKixorT6tOqnpnaggExIwy5jBZ-Q2mqBj4RMoiudLYaK8-E
