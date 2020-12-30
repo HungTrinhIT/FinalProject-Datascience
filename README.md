@@ -150,8 +150,17 @@
 
 <h2>4. Hướng dẫn chạy các file code</h2>
 
-  - **Book_1.csv** : File lưu đường link của các cuốn sách trên trang goodread đã thu thập được 
-  -	**X.csv** : File lưu giữ thông tin cụ thể của từng cuốn sách( không  có rating) 
-  -	**Y.csv** : File lưu giữ thông tin về rating của từng cuốn sách 
-  -	**Colab.txt** : Lưu đường link dẫn đến file crawl data 
-  -	**Predict.csv** : Lưu kết quả dự đoán mô hình và kết quả thực trên trang goodread
+  - **Bài toán 1: đoán giá nhà**
+    - **Chotot_Scraping_Data.ipynb:** script thu thập data nhà từ trang cho tốt
+    - **rawdata.csv:** data sau khi được crawl (data thô - chưa qua xử lý)
+    - **dataset.csv:** data sau khi trải qua quá trình xử lý
+    - **links_chotot.csv:** link của các ngôi nhà trên trang chợ tốt, ứng vói mỗi ngôi nhà sẽ crawl thông tin chi tiết.
+    - **Predict.ipynb:** file thực hiện tiền xử lý dữ liệu và training data<br><br>
+
+  - **Bài toán 2: đánh giá rating**
+    - **Book_1.csv** : File lưu đường link của các cuốn sách trên trang goodread đã thu thập được 
+    -	**X.csv** : File lưu giữ thông tin cụ thể của từng cuốn sách( không  có rating) 
+    -	**Y.csv** : File lưu giữ thông tin về rating của từng cuốn sách 
+    -	**Colab.txt** : Lưu đường link dẫn đến file crawl data 
+    -	**Predict.csv** : Lưu kết quả dự đoán mô hình và kết quả thực trên trang goodread<br><br>
+  
