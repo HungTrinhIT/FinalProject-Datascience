@@ -143,3 +143,8 @@
   ```
 
 - **Đánh giá thuật toán:**:
+  - Với kết quả tập test chênh lệch khá thấp so với rating thực như hình dưới đây. Ta có thể thấy mô hình đã hoạt động rất tốt 
+  ![data](./images/rating_data2.png)
+  ![data](./images/rating_data3.png)
+
+<h2>4. Hướng dẫn chạy các file code</h2>
