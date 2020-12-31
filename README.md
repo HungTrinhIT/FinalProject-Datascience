@@ -77,6 +77,17 @@
     &#8594; Có thể thấy trường dữ liệu **giấy tờ** **không** ảnh hưởng quá nhiều tới **giá nhà**<br><br>
 
   - **Chạy thuật toán đoán giá**:
+    - **Train tập dữ liệu với thuật toán Linear Regression:**
+      - Chi tiết được trình bày trong file Predict.ipynb
+      - Kết quả: ![data](./images/rating_data4.png)
+  
+      &#8594; **Nhận xét:** Có thể thấy mô hình fit với những căn nhà có giá thấp cho tới trung bình . Còn những căn nhà ở mức cao thì các thông số đưa ra trong bộ dataset sẽ không còn ảnh hưởng tới mức giá nữa (đặc biệt là những outliner mạnh hay những data nhiễu được đưa vào thì dự đoán sẽ sai lệch rất lớn ).
+      - Độ trung bình sai lệch: ![data](./images/rating_data5.png)
+      &#8594; **Nhận xét:**  Sai lệch trung bình của dataset là khoảng **77355 usd** với lý do đã kể trên
+
+    - **Train tập dữ liệu với thuật toán Logistic Regression và Linear Regression:**
+      - Ý tưởng: Chia giá tiền các căn chung cư thành 4 mức giá từ thấp -> cao và thực hiện logis data dựa theo mức rank này. Mỗi data test được đưa vào sẽ được phân loại vào 1 trong 4 mức kể trên . Từ đó lựa chọn mô hình linear phù hợp để chạy thuật toán dự đoán cho ra kq tốt nhất
+      - Chi tiết được trình bày trong file code Predict.ipynb
 
 **3.1. Bài toán 2:**
     
