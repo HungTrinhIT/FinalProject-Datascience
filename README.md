@@ -1,6 +1,10 @@
 <h1>BÁO CÁO ĐỒ ÁN CUỐI KÌ - KHOA HỌC DỮ LIỆU ỨNG DỤNG</h1>
 <h2>Cấu trúc folder đồ án</h2>
-  - **Chotot:** chứa file
+
+  - **Chotot:** chứa file **code** và **datasdet** của **bài toán 1**
+  - **images:** chứa các hình ảnh screenshot
+  - **Rating:** chứa file **code** và **dataset** của **bài toán 2**
+  - **README.MD:** chứa báo cáo đồ án
 <h2>1. Thành viên nhóm và phân công</h2>
 
 * Thành viên 
